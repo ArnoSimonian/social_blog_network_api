@@ -17,11 +17,6 @@ class PostSerializer(serializers.ModelSerializer):
         read_only=True,
         default=serializers.CurrentUserDefault()
     )
-    group = SlugRelatedField(
-        queryset=Group.objects.all(),
-        slug_field='pk',
-        required=False
-    )
 
     class Meta:
         fields = ('id', 'author', 'text', 'pub_date', 'image', 'group')
