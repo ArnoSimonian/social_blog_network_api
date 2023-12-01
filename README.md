@@ -1,65 +1,66 @@
-# api_final_yatube
+# API для социальной сети блогеров
 
 
-### Описание:
+### Описание
 
-Проект **api_final_yatube** является полноценным API для социальной сети ***Yatube***.
-
-Разработано на базе учебного проекта ***Kittigram***.
+Проект является полноценным API для [социальной сети блогеров](https://github.com/ArnoSimonian/social_blog_network).
 
 
-### Установка:
+### Установка
 
-Клонировать репозиторий и перейти в него в командной строке:
+1. Клонируйте репозиторий и перейдите в него в командной строке:
 
 ```
-git clone https://github.com/ArnoSimonian/api_final_yatube.git
-cd api_final_yatube
+  git clone https://github.com/ArnoSimonian/social_blog_network_api.git
+  cd social_blog_network_api
 ```
 
-Cоздать и активировать виртуальное окружение:
+2. Cоздайте и активируйте виртуальное окружение:
 
 ```
-python -m venv venv
-source venv/Scripts/activate
+  python3 -m venv venv
+  # Для Linux/macOS:
+  source venv/bin/activate
+  # Для Windows:
+  source venv/Scripts/activate
 ```
 
-Установить зависимости из файла requirements.txt:
+3. Установите зависимости из файла requirements.txt:
 
 ```
-python -m pip install --upgrade pip
-pip install -r requirements.txt
+  python -m pip install --upgrade pip
+  pip install -r requirements.txt
 ```
 
-Выполнить миграции:
+4. Выполните миграции:
 
 ```
-python manage.py migrate
+  python manage.py migrate
 ```
 
-Запустить проект:
+5. В папке с файлом manage.py выполните команду, чтобы запустить проект:
 
 ```
-python manage.py runserver
+  python manage.py runserver
 ```
 
 
-### Примеры запросов к API:
+### Примеры запросов к API
 
-Получение публикаций:
-GET api/v1/posts/
+Получение списка всех публикаций:
+GET ```api/v1/posts/```
 
 Создание публикации:
-POST api/v1/posts/
+POST ```api/v1/posts/```
 
 Обновление публикации:
-PUT api/v1/posts/{id}/
+PUT ```api/v1/posts/{id}/```
 
 Частичное обновление комментария:
-PATCH api/v1/posts/{post_id}/comments/{id}/
+PATCH ```api/v1/posts/{post_id}/comments/{id}/```
 
-Подписка:
-POST api/v1/follow/
+Подписка на автора:
+POST ```api/v1/follow/```
 
 Информация о сообществе:
-GET api/v1/groups/{id}/
+GET ```api/v1/groups/{id}/```
