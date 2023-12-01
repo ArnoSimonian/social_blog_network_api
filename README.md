@@ -49,24 +49,24 @@
 
 - Получение списка всех публикаций:
 
-GET ```api/v1/posts/```
+  GET ```api/v1/posts/```
 
 - Создание публикации:
 
-POST ```api/v1/posts/```
+  POST ```api/v1/posts/```
 
 - Обновление публикации:
 
-PUT ```api/v1/posts/{id}/```
+  PUT ```api/v1/posts/{id}/```
 
 - Частичное обновление комментария:
 
-PATCH ```api/v1/posts/{post_id}/comments/{id}/```
+  PATCH ```api/v1/posts/{post_id}/comments/{id}/```
 
 - Подписка на автора:
 
-POST ```api/v1/follow/```
+  POST ```api/v1/follow/```
 
 - Информация о сообществе:
 
-GET ```api/v1/groups/{id}/```
+  GET ```api/v1/groups/{id}/```
