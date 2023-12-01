@@ -6,6 +6,15 @@
 Проект является полноценным API для [социальной сети блогеров](https://github.com/ArnoSimonian/social_blog_network).
 
 
+## Технологии
+
+- Python 3.7
+- Django 2.2.19
+- Django Rest Framework
+- Simple JWT
+- SQLite 3
+
+
 ### Установка
 
 1. Клонируйте репозиторий и перейдите в него в командной строке:
